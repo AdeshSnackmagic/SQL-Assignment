@@ -1,0 +1,13 @@
+-- TO BACKUP THE DATABASE
+
+mysqldump -u root -p Library > ~/Desktop/LibraryBackup.sql
+
+-- to create Database
+
+CREATE DATABASE restored
+
+-- To restore 
+
+mysql-u root -p restored <~/Desktop/LibraryBackup.sql
+
+
